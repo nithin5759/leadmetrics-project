@@ -29,14 +29,14 @@ const Navbar = React.memo(() => {
           <div className="flex items-center gap-7 mr-7">
             {navigationData.map((items: NavbarProps) => {
               return (
-                <a
+                <div
                   key={items.id}
                   className="font-medium cursor-pointer text-base
  text-[#2C2C4B] hover:text-[#6E3BFF] transition-all duration-300"
                   onClick={() => scrollToSection(items.name)}
                 >
                   {items.title}
-                </a>
+                </div>
               );
             })}
           </div>
