@@ -14,8 +14,11 @@ interface ClientsDataItems {
 
 const Clients = React.memo(() => {
   return (
-    <section id="clients" className="w-full py-16 px-4 bg-white">
-      <div className="w-full max-w-7xl">
+    <section
+      id="clients"
+      className="w-full py-16 px-4 bg-white flex flex-col items-center"
+    >
+      <div className="w-full max-w-7xl flex flex-col items-center">
         <h2 className="text-[#272735] mt-4 font-bold text-3xl lg:text-4xl !leading-snug">
           Brands that trust us
         </h2>
@@ -23,6 +26,7 @@ const Clients = React.memo(() => {
           slidesPerView={2}
           spaceBetween={20}
           autoplay={{ delay: 2000, disableOnInteraction: false }}
+          loop={true}
           className="!flex mt-16 w-full justify-center"
           breakpoints={{
             640: {
