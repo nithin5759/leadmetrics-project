@@ -167,7 +167,7 @@ export default function Home() {
                       isError={errors.email}
                       touched={touched.email}
                       helperText={touched.email ? errors.email : ""}
-                      placeholder="email"
+                      placeholder="Email"
                       variant="input"
                     />
                     <InputField
@@ -177,7 +177,7 @@ export default function Home() {
                       isError={errors.phone}
                       touched={touched.phone}
                       helperText={touched.phone ? errors.phone : ""}
-                      placeholder="Phone"
+                      placeholder="Mobile Number"
                       variant="input"
                     />
                   </div>
@@ -188,7 +188,7 @@ export default function Home() {
                     isError={errors.company}
                     touched={touched.company}
                     helperText={touched.company ? errors.company : ""}
-                    placeholder="company"
+                    placeholder="Company"
                     variant="input"
                   />
                   <InputField
@@ -198,7 +198,7 @@ export default function Home() {
                     isError={errors.requirements}
                     touched={touched.requirements}
                     helperText={touched.requirements ? errors.requirements : ""}
-                    placeholder="requirements"
+                    placeholder="Submit Your Requirements"
                     variant="textarea"
                   />
                   <Button
@@ -239,9 +239,9 @@ export default function Home() {
       </section>
       <section
         id="about"
-        className="w-full bg-white flex flex-col items-center"
+        className="w-full bg-white flex flex-col items-center px-4 py-5 md:py-10"
       >
-        <div className="w-full max-w-7xl px-4 py-5 md:py-10">
+        <div className="w-full max-w-7xl ">
           <p className="text-[#6E3BFF] font-semibold uppercase text-sm tracking-[5px]">
             WHY LEADMETRICS
           </p>
@@ -277,10 +277,10 @@ export default function Home() {
       </section>
       <section
         id="services"
-        className="w-full flex justify-center bg-white bg-no-repeat bg-center bg-cover"
+        className="w-full flex justify-center bg-white bg-no-repeat bg-center bg-cover px-4 py-5 md:py-10"
         style={{ backgroundImage: `url(${"/images/services-bg.png"})` }}
       >
-        <div className="w-full flex flex-col items-center max-w-7xl px-4 py-5 md:py-10">
+        <div className="w-full flex flex-col items-center max-w-7xl">
           <p className="text-[#6E3BFF] font-semibold uppercase text-sm tracking-[5px]">
             SERVICES
           </p>
@@ -350,9 +350,9 @@ export default function Home() {
       </section>
       <section
         id="features"
-        className="w-full bg-white flex flex-col items-center"
+        className="w-full bg-white flex flex-col items-center px-4 py-5 md:py-10"
       >
-        <div className="w-full max-w-7xl px-4 py-5 md:py-10">
+        <div className="w-full max-w-7xl">
           <p className="font-semibold text-[#6E3BFF] uppercase tracking-[5px] text-sm">
             FEATURES
           </p>
@@ -385,9 +385,9 @@ export default function Home() {
       </section>
       <section
         id="clients"
-        className="w-full py-16 bg-white flex flex-col items-center"
+        className="w-full py-16 px-4  bg-white flex flex-col items-center"
       >
-        <div className="w-full max-w-7xl px-4 flex flex-col items-center">
+        <div className="w-full max-w-7xl flex flex-col items-center">
           <h2 className="text-[#272735] mt-4 font-bold text-3xl lg:text-4xl !leading-snug">
             Brands that trust us
           </h2>
@@ -434,8 +434,8 @@ export default function Home() {
           </Swiper>
         </div>
       </section>
-      <section className="w-full py-16 bg-white flex justify-center">
-        <div className="w-full max-w-7xl px-4 py-5 md:py-10 flex flex-col items-center">
+      <section className="w-full py-16 bg-white flex justify-center px-4 py-5 md:py-10">
+        <div className="w-full max-w-7xl flex flex-col items-center">
           <p className="font-semibold text-[#6E3BFF] uppercase tracking-[5px] text-sm">
             WHY LEADMETRICS
           </p>
@@ -469,8 +469,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="w-full py-16 bg-white flex justify-center">
-        <div className="w-full max-w-7xl px-4 py-5 md:py-10 flex flex-col items-center">
+      <section className="w-full py-16 bg-white flex justify-center px-4 py-5 md:py-10">
+        <div className="w-full max-w-7xl flex flex-col items-center">
           <p className="font-semibold text-[#6E3BFF] uppercase tracking-[5px] text-sm">
             FAQ’S
           </p>
@@ -482,7 +482,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="bottom-form" className="w-full flex flex-col bg-white py-10">
+      <section id="bottom-form" className="w-full flex flex-col bg-white py-10 px-4">
         <div
           className="bg-[#6E3BFF] flex justify-center w-full object-cover bg-center bg-no-repeat relative before:absolute before:w-full before:h-full before:bg-[#00000060] before:z-10"
           style={{ backgroundImage: `url(${"/images/bottom-form-bg.png"})` }}
@@ -530,7 +530,7 @@ export default function Home() {
                           isError={errors.email}
                           touched={touched.email}
                           helperText={touched.email ? errors.email : ""}
-                          placeholder="email"
+                          placeholder="Email"
                           variant="input"
                           isBottomForm
                         />
@@ -541,7 +541,7 @@ export default function Home() {
                           isError={errors.phone}
                           touched={touched.phone}
                           helperText={touched.phone ? errors.phone : ""}
-                          placeholder="Phone"
+                          placeholder="Mobile Number"
                           variant="input"
                           isBottomForm
                         />
@@ -553,7 +553,7 @@ export default function Home() {
                         isError={errors.company}
                         touched={touched.company}
                         helperText={touched.company ? errors.company : ""}
-                        placeholder="company"
+                        placeholder="Company"
                         variant="input"
                         isBottomForm
                       />
@@ -566,7 +566,7 @@ export default function Home() {
                         helperText={
                           touched.requirements ? errors.requirements : ""
                         }
-                        placeholder="requirements"
+                        placeholder="Submit Your Requirements"
                         variant="textarea"
                         isBottomForm
                       />
