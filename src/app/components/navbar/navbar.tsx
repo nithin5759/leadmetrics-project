@@ -21,7 +21,7 @@ const Navbar = React.memo(() => {
   };
 
   return (
-    <nav className="bg-white flex justify-center shadow-sm sticky top-0 z-10">
+    <nav className="bg-white flex justify-center shadow-sm sticky top-0 z-20">
       <div className="max-w-7xl w-full p-4 flex items-center justify-between relative">
         <Image src={"/images/logo.png"} alt="logo" width={170} height={28} />
 
