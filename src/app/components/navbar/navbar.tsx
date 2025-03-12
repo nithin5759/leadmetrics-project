@@ -1,9 +1,9 @@
 "use client";
 
+import React, { useState } from "react";
+import Image from "next/image";
 import { navigationData } from "@/app/constants";
 import Button from "../button/button";
-import Image from "next/image";
-import React, { useState } from "react";
 
 interface NavbarProps {
   title: string;
@@ -17,6 +17,7 @@ const Navbar = React.memo(() => {
   const scrollToSection = (id: string) => {
     const section = document.getElementById(id);
     section?.scrollIntoView({ behavior: "smooth", block: "start" });
+    setIsSidebarOpen(false);
   };
 
   return (

@@ -1,6 +1,11 @@
 "use client";
-
+import { useState } from "react";
 import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
+import { Formik, Form } from "formik";
+import * as Yup from "yup";
 import { InputField, Button, Accordion } from "./components";
 import {
   aboutData,
@@ -13,11 +18,6 @@ import {
   serviceOptionsData,
   navigationData,
 } from "./constants";
-import { Formik, Form } from "formik";
-import * as Yup from "yup";
-import { useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
 
 interface OfferingsDataItems {
   title: string;
@@ -146,7 +146,7 @@ export default function Home() {
             >
               {({ handleChange, values, errors, touched, submitForm }) => (
                 <Form className="bg-[#6E3BFF0D] rounded-xl w-full lg:max-w-md flex flex-col justify-between gap-4 p-8">
-                  <p className="text-lg text-[#7b7b97] font-semibold">
+                  <p className="text-lg text-[#212136] font-semibold">
                     Get a free consultation
                   </p>
                   <InputField
@@ -378,7 +378,7 @@ export default function Home() {
               );
             })}
           </div>
-          <div className="flex justify-center">
+          <div className="flex justify-center mt-16">
             <Button value="Get A Call Back" variant="primary" />
           </div>
         </div>
@@ -396,7 +396,7 @@ export default function Home() {
             spaceBetween={20}
             onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}
-            autoplay={true}
+            autoplay={{ delay: 2000, disableOnInteraction: false }}
             className="mt-16 w-full !flex justify-center"
             breakpoints={{
               640: {
@@ -414,6 +414,7 @@ export default function Home() {
                 spaceBetween: 10,
               },
             }}
+            modules={[Autoplay]}
           >
             {clientsData.map((items: ClientsDataItems) => {
               return (
@@ -482,7 +483,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="bottom-form" className="w-full flex flex-col bg-white py-10 px-4">
+      <section
+        id="bottom-form"
+        className="w-full flex flex-col bg-white py-10 px-4"
+      >
         <div
           className="bg-[#6E3BFF] flex justify-center w-full object-cover bg-center bg-no-repeat relative before:absolute before:w-full before:h-full before:bg-[#00000060] before:z-10"
           style={{ backgroundImage: `url(${"/images/bottom-form-bg.png"})` }}
